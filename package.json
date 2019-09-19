@@ -1,5 +1,6 @@
 {
   "name": "agtech-sustainability-index",
+  "homepage": "https://harvestprofit.github.io/agtech-sustainability-index",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,8 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
