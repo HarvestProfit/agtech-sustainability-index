@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f8cbe794492eb06370a63eae794a36f",
+    "revision": "b311f68752bb224804f1907f866e9d8a",
     "url": "/agtech-sustainability-index/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agtech-sustainability-index/static/js/2.cd346dc3.chunk.js"
   },
   {
-    "revision": "bad4463d0cd897e57978",
-    "url": "/agtech-sustainability-index/static/js/main.30f95521.chunk.js"
+    "revision": "4087879e6b6899d7edef",
+    "url": "/agtech-sustainability-index/static/js/main.ec3a0ffd.chunk.js"
   },
   {
     "revision": "03b35338e5b5db853a2c",
