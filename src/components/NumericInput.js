@@ -9,7 +9,7 @@ const NumbericInput = ({ id, name, value, onChange }) => {
       <InputGroupAddon addonType="prepend">
         <InputGroupText style={{ width: '200px' }} tag="label" htmlFor={id}>{name}</InputGroupText>
       </InputGroupAddon>
-      <Input type="numeric" step="1" invalid={!valid} id={id} name={id} value={value} onChange={onChange} />
+      <Input type="number" step="1" invalid={!valid} id={id} name={id} value={value} onChange={onChange} />
     </InputGroup>
   )
 }
