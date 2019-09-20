@@ -16,7 +16,7 @@ class App extends Component {
               <img className="img-fluid" alt="Harvest Profit" src={whiteLogo} height="30" width="30" />
             </NavbarBrand>
             <NavbarBrand href="/">
-              AgTech<span className="d-none d-md-inline"> Sustanability Index</span>
+              AgTech<span className="d-none d-md-inline"> Sustainability Index</span>
             </NavbarBrand>
           </Navbar>
         </header>
