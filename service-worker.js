@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/agtech-sustainability-index/precache-manifest.8e6d2fa6b95decb33bd210c6178ed9cf.js"
+  "/agtech-sustainability-index/precache-manifest.6be91c93221fd9370921b485be4d7b54.js"
 );
 
 self.addEventListener('message', (event) => {

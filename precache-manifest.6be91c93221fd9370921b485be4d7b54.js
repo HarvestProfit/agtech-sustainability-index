@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88d2ae71b8e472cf466d9834114bcfae",
+    "revision": "4ef351128cdca40c45c5e0c200921587",
     "url": "/agtech-sustainability-index/index.html"
   },
   {
