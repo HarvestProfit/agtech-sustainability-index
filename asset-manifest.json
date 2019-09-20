@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/agtech-sustainability-index/static/js/main.ec3a0ffd.chunk.js",
-    "main.js.map": "/agtech-sustainability-index/static/js/main.ec3a0ffd.chunk.js.map",
+    "main.js": "/agtech-sustainability-index/static/js/main.2b13a233.chunk.js",
+    "main.js.map": "/agtech-sustainability-index/static/js/main.2b13a233.chunk.js.map",
     "runtime-main.js": "/agtech-sustainability-index/static/js/runtime-main.221d4d3d.js",
     "runtime-main.js.map": "/agtech-sustainability-index/static/js/runtime-main.221d4d3d.js.map",
     "static/js/2.cd346dc3.chunk.js": "/agtech-sustainability-index/static/js/2.cd346dc3.chunk.js",
     "static/js/2.cd346dc3.chunk.js.map": "/agtech-sustainability-index/static/js/2.cd346dc3.chunk.js.map",
     "index.html": "/agtech-sustainability-index/index.html",
-    "precache-manifest.8528c3d3873d31dc7b6cb1bc5b778732.js": "/agtech-sustainability-index/precache-manifest.8528c3d3873d31dc7b6cb1bc5b778732.js",
+    "precache-manifest.3c5662d2a7e08d81c1d7034e2b7cd41e.js": "/agtech-sustainability-index/precache-manifest.3c5662d2a7e08d81c1d7034e2b7cd41e.js",
     "service-worker.js": "/agtech-sustainability-index/service-worker.js"
   }
 }
