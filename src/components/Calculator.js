@@ -51,7 +51,7 @@ class Calculator extends Component {
       const profitToCapital = (_.toNumber(grossProfit) / _.toNumber(capitalRaised)) * 100000;
       const runningOutOfMoney = _.toNumber(monthsOfRunway) < 12 ? -1000000000 : 0;
 
-      index = (employeeValue + profitToCapital + runningOutOfMoney);
+      index = (employeeValue + profitToCapital + runningOutOfMoney).toFixed(0);
     } catch {
       problem = true;
     }
