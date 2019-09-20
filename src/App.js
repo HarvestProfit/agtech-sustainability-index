@@ -24,7 +24,7 @@ class App extends Component {
         <footer>
           <Navbar color="light" light>
             <a href="https://www.harvestprofit.com">
-              Made with <i className="fas fa-heart" /> by Harvest Profit
+              Made with <i className="fas fa-heart" /><span className="d-none d-sm-inline"> by Harvest Profit</span>
             </a>
             <NavbarBrand href="https://github.com/HarvestProfit/agtech-sustainability-index">
               Source Code
