@@ -51,7 +51,11 @@ class Calculator extends Component {
       const profitToCapital = (_.toNumber(grossProfit) / _.toNumber(capitalRaised)) * 100000;
       const runningOutOfMoney = _.toNumber(monthsOfRunway) < 12 ? -1000000000 : 0;
 
-      index = (employeeValue + profitToCapital + runningOutOfMoney).toFixed(0);
+      const indexValue = (employeeValue + profitToCapital + runningOutOfMoney)
+      index = indexValue.toFixed(0);
+      if (!_.isFinite(indexValue)) {
+        problem = true;
+      }
     } catch {
       problem = true;
     }
@@ -60,14 +64,14 @@ class Calculator extends Component {
     return (
       <Container className="my-5">
         <div className="text-center">
-          {problem ? (
-            <h1>N/A</h1>
-          ) : (
-            <div className="mb-5">
-              <h1 className="lead">AgTech Sustainability Index</h1>
+          <div className="mb-5">
+            <h1 className="lead">AgTech Sustainability Index</h1>
+            {problem ? (
+              <h1>N/A</h1>
+            ) : (
               <h1>{numberWithCommas(index)}</h1>
-            </div>
-          )}
+            )}
+          </div>
         </div>
         <NumericInput id="gross_profit" name="Gross Profit" value={grossProfit} onChange={this.setGrossProfit} />
         <NumericInput id="product_employees" name="Product Employees" value={productEmployees} onChange={this.setProductEmployees} />
