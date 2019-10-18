@@ -1,3 +1,4 @@
+import MathJax from 'react-mathjax-preview'
 import _ from 'lodash';
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
@@ -8,10 +9,15 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+// eslint-disable-next-line no-useless-escape
+const formula = String.raw`$$\text{AgTech Sustainability Index™️} = \frac{\frac{\text{Gross Profit}}{\text{Total Employees}} + \frac{\text{Product Employees} \cdot 100,000}{\text{Total Employees}} + \frac{\text{Gross Profit} \cdot 100,000}{\text{Capital Raised}} + \text{Oh Snap Factor}}{3}$$`;
+const ohSnapFactorForumla = String.raw`$$\text{Oh Snap Factor} = \text{If Months of Runway is less than 12 then } \color{red}{{-1000000000}} \text{ else }\color{red}{0}$$`;
+
 class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      svg: null,
       grossProfit: '100000',
       productEmployees: '5',
       totalEmpoyees: '10',
@@ -19,6 +25,19 @@ class Calculator extends Component {
       monthsOfRunway: '12',
     };
   }
+
+  // componentDidMount() {
+  //   require('mathjax').init({
+  //     loader: { load: ['input/tex', 'output/svg'] },
+  //     tex: {
+	// 			inlineMath: [["$", "$"], ["\\(", "\\)"]],
+	// 			packages: ['base', 'ams'],
+	// 		},
+  //   }).then((math) => {
+  //     const svg = math.tex2svg('\\frac{1}{x^2-1}');
+  //     this.setState({ svg });
+  //   }).catch((err) => console.log(err.message));
+  // }
 
   setCapitalRaised = (event) => this.setState({ capitalRaised: event.target.value })
 
@@ -62,9 +81,13 @@ class Calculator extends Component {
 
 
     return (
-      <Container className="my-5">
+      <Container className="mb-5">
+        <div className="text-center my-5 overflow-auto">
+          <MathJax math={formula} />
+          <MathJax math={ohSnapFactorForumla} />
+        </div>
         <div className="text-center">
-          <div className="mb-5">
+          <div className="my-5">
             <h1 className="lead">AgTech Sustainability Index</h1>
             {problem ? (
               <h1>N/A</h1>
